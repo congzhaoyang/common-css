@@ -1,0 +1,9 @@
+$basePixel: 37.5;
+
+// background: url('../../assets/images/banner_default@2x.jpg?v=#{$timestamp}') no-repeat;
+$ts: random(3000000);
+
+// px转rem
+@function r($px) {
+  @return ($px) / ($basePixel) + rem;
+}

@@ -1,0 +1,125 @@
+
+
+// TODO:常用样式
+// inline-block
+.ib {
+  display: inline-block;
+}
+
+// border-radius: 50%;
+.br50 {
+  border-radius: 50%;
+}
+
+// 文本对齐方式
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+.tal {
+  text-align: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.inl-b {
+  display: inline-block;
+  vertical-align: middle;
+}
+.block{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+
+// 清楚浮动
+.cl {
+  *zoom: 1;
+
+  &:after,
+  &:before {
+    // Fixes Opera/contenteditable bug: // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+    display: table;
+    border-spacing: 0;
+    content: '';
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// 定位方式
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.ovf {
+  overflow: hidden;
+}
+
+.a-none {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* 文本溢出隐藏 */
+.t-ovf-h {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//单行文本溢出
+.elli {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//多行文本溢出
+.elli-multi {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 2.8em;
+
+  //1.5倍间距时两行高度 hack
+
+}
+
+//圆
+.circle {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+//禁止点击
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
