@@ -3,6 +3,12 @@
    v3.0 | 20180413
    License: none (public domain)
 */
+// 取消tap颜色
+* { 
+  outline: 0px solid transparent; 
+  -webkit-tap-highlight-color: rgba(0,0,0,0); 
+  -webkit-touch-callout: none;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
